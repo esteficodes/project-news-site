@@ -1,4 +1,38 @@
-html {
-  background: #0025ff;
-  color: #fff;
+
+body {
+  background: #F50478;
+  display: flex;
+  width:100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
 }
+
+section {
+  display: block;
+}
+
+h1 {
+  color: whitesmoke;
+  text-align: center;
+  }
+
+img {
+  width: 20%;
+  height: 20%;
+  justify-content: center;
+  margin: 20px;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+   body {
+       flex-direction: row;
+       background: #F50478;
+       flex-wrap: wrap;
+  }
+  img {
+    width: 40%;
+  }
+  }
+
+   
