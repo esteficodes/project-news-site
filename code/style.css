@@ -13,7 +13,7 @@ h2 {
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 40px;
   color: #F50478;
 }
 
@@ -63,6 +63,10 @@ header img {
   width: 180px; 
 }
 
+img:hover {
+  background-color: thistle;
+}
+
 nav {
   display: none;
 }
@@ -71,6 +75,11 @@ nav a {
   color: #fff;
   text-decoration: none;
   margin-left: 16px;
+  
+}
+
+a:hover {
+  background-color: thistle;
 }
 
 /*** BIG NEWS ***/
@@ -84,6 +93,20 @@ nav a {
 
 .big-news-container img {
   width: 100%;
+  background: #fafafa;
+  border: 2px solid #F50478;
+  border-radius: 16px;
+  width: 100%;
+  text-decoration: none;
+  color:#000;
+  box-shadow: 12px 12px 0 0 #F50478;
+  padding: 16px;
+  margin-bottom: 32px;
+  margin-right: 16px;
+}
+
+img:hover {
+  background-color: thistle;
 }
 
 .big-news-container div {
@@ -93,10 +116,13 @@ nav a {
 /*** OTHER NEWS ***/
 
 .other-news-container {
+  display:flex;
   background: #fff;
   color:#F50478;
   text-align: center;
   padding: 24px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .other-news {
@@ -161,7 +187,6 @@ nav a {
   .big-news-container div {
     text-align: left;
   }
-
 }
 
 @media (min-width: 900px) {
@@ -184,4 +209,12 @@ nav a {
 
 
 /**** FOOTER ****/
- 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #F50478;
+  color: whitesmoke;
+  text-align: center;
+}
