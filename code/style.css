@@ -63,10 +63,6 @@ header img {
   width: 180px; 
 }
 
-img:hover {
-  background-color: thistle;
-}
-
 nav {
   display: none;
 }
