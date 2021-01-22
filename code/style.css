@@ -114,19 +114,17 @@ img:hover {
 
 .other-news-container {
   display: flex;
+  flex-wrap: wrap;
+  grid-gap: 5px;
   max-width: 100%;
   color:whitesmoke;
   padding: 24px;
-  align-items: center; 
-  justify-content: space-between;
+ 
 }
 
-.other-news {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.other-news a {
+
+.other-news-container {
   background: #fafafa;
   border: 2px solid #F50478;
   border-radius: 16px;
