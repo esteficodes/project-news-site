@@ -112,15 +112,24 @@ img:hover {
 
 /*** OTHER NEWS ***/
 
-.grid-container {
+.news-container {
+  background: #fff;
+  color:#24292d;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
   border: 2px solid  #F50478;
   height: 500px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
+  padding: 24px;
+  width: 100%;
+  max-width: 1100%;
 }
 
-.grid-image {
+.news {
+  display: flex;
+  flex-wrap: wrap;
+}
+.news-item img {
   width: 100%;
 }
 
@@ -155,6 +164,11 @@ img:hover {
     width: 100%;
   }
 
+  .news {
+    width: 25%;
+    flex-grow: 1;
+    margin: 16px;
+  }
   
 }
 
