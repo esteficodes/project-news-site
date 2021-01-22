@@ -14,7 +14,8 @@ h2 {
 
 h3 {
   font-size: 40px;
-  color: #F50478;
+  color: whitesmoke;
+  text-align: center;
 }
 
 h4 {
@@ -112,34 +113,34 @@ img:hover {
 /*** OTHER NEWS ***/
 
 .other-news-container {
-  display:flex;
-  background: #fff;
-  color:#F50478;
-  text-align: center;
+  display: flex;
+  max-width: 100%;
+  color:whitesmoke;
   padding: 24px;
+  align-items: center; 
   justify-content: space-between;
-  align-items: center;
 }
 
 .other-news {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
 }
 
 .other-news a {
   background: #fafafa;
   border: 2px solid #F50478;
   border-radius: 16px;
-  width: 100%;
+  width: 25%;
   text-decoration: none;
   color:#000;
-  box-shadow: 12px 12px 0 0 #F50478;
+  box-shadow: 12px 12px 0 0 pink;
   padding: 16px;
   margin-bottom: 32px;
+  text-align: center;
 }
 
-.other-news img {
-  width: 100%;
+.news-card-image {
+  width: 100%; 
 }
 
 .other-news a div {
@@ -149,29 +150,18 @@ img:hover {
 }
 
 .other-news a img {
-  width: 100%; 
+  width: 100%;
+  position: relative;
 }
 
-.circles {
-  display: flex;
-  justify-content: space-between;
-  margin: 16px;
-  margin-bottom: -16px;
-}
-
-.circles span {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #F50478;
-}
 
 /*** MEDIA QUERIES ***/
 
-@media (min-width:650px) {
+@media (min-width:768px) {
   header {
     justify-content: space-between;
   }
+
   nav {
     display: inline-block;
   }
@@ -183,22 +173,24 @@ img:hover {
   .big-news-container div {
     text-align: left;
   }
+
+  .other-news-container  {
+    width: 100%;
+    padding-bottom: 16px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .big-news-container .container {
     flex-direction: row;
     align-items: center;
   }
 
   .big-news-container img {
-    width: 50%;
+    width: 100%;
   }
 
-  .other-news a {
-    width: 25%;
-    flex-grow: 1;
-    margin: 16px;
+  .other-news-container {
+    width: 100%;
   }
 }
 
@@ -213,4 +205,6 @@ img:hover {
   background-color: #F50478;
   color: whitesmoke;
   text-align: center;
+  padding-top: 16px;
+  }
 }
