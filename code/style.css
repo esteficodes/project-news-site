@@ -161,7 +161,7 @@ img:hover {
   }
 
   .news-container {
-    grid-column: auto;
+    grid-column: column;
   }
 
   .news-item {
@@ -170,7 +170,6 @@ img:hover {
   }
 
 }
-  
 
 @media (min-width: 1024px) {
   .big-news-container .container {
