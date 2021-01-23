@@ -120,8 +120,7 @@ img:hover {
   display:grid;
   grid-column-gap: 16px;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
-  
+  grid-gap: 5px;  
 }
 
 .news-item {
@@ -161,14 +160,12 @@ img:hover {
   }
 
   .news-container {
-    grid-column: column;
+    grid-template-columns: 1;
   }
 
   .news-item {
-    width: 100%;
-    
+    width: 100%; 
   }
-
 }
 
 @media (min-width: 1024px) {
@@ -181,8 +178,13 @@ img:hover {
     width: 100%;
   }
   
+  .news-container {
+   grid-template-columns: 4;
+
+  }
   .news-item {
-    width: 100%;
+    width:100%;
+    height: fit-content;
   }
 }
 
